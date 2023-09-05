@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: cadetblue;
+}
+
+.contaner {
+  width: 350px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ccc;
+  font-size: larger;
+  font-weight: 700;
+}
+
+header p:first-of-type {
+  color: cadetblue;
+}
+
+header p:last-of-type span {
+  cursor: pointer;
+  margin-left: 10px;
+  user-select: none;
+}
+
+.week {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.week li {
+  text-align: center;
+  width: calc(100% / 7);
+  border-bottom: 1px dashed cadetblue;
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  margin: 10px 0;
+  font-weight: 200;
+}
+
+.days li {
+  padding: 10px;
+  text-align: center;
+  width: calc(100% / 7);
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.days li.active {
+  background-color: cadetblue;
+  color: white;
+  border-radius: 50%;
+}
+
+.days li.unactive {
+  background-color: #ccc;
+  opacity: 0.5;
+}
